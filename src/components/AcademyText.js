@@ -29,7 +29,7 @@ const AcademyText = () => {
     return(
         <LogoHeading>
             <div>
-               PreslaVSysteM
+               InSevenMinutes
             </div>
           
         </LogoHeading>

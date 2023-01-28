@@ -31,9 +31,9 @@ const About = () => (
       <AboutLogo />
    
       <Div>
-            <h2>PreslavSystem is a learning management system.</h2>
-            <h4>Our mission is to providing practical education.</h4>
-            <h4>We value quality.</h4>
+            <h2>InSevenMinutes turning information into knowledge.</h2>
+            <h4>We simplify complexity.</h4>
+           
       </Div>
   
   </Box>
