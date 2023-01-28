@@ -16,7 +16,7 @@ const spintransition = {
     // const [ rotate, setRotate ] = useState(false);
     return(
             <motion.div  
-            animate={{x:415,y:125, scale:1}}
+            animate={{x:351,y:100, scale:1.2}}
             initial={{scale:8}}
             transition={spintransition}
             >

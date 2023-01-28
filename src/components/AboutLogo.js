@@ -6,7 +6,7 @@ import AboutImage from "./AboutImage";
 
 const spintransition = {
     loop: Infinity,
-    duration: 1
+    duration: 0.5
 }
 
  const AboutLogo = () => {

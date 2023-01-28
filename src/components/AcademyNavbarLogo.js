@@ -8,7 +8,7 @@ import AcademyNavbarText from "./AcademyNavbarText";
 
 const spintransition = {
     loop: Infinity,
-    duration: 4
+    duration: 5
 }
 
  const AcademyNavbarTextLogo = () => {
