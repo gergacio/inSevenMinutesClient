@@ -82,7 +82,6 @@ const handleClickInfo = () => {
             <p>Username: {learner.userName}</p> 
             <p>Email: {learner.email}</p>
             <p>Age: {learner.age}</p>
-            {/* <p>Wallet: {learner.wallet} £</p> */}
             {/* <p>Bookings: </p> */}
           
           </div>

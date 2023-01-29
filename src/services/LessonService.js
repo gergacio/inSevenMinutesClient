@@ -1,4 +1,4 @@
-const baseURL = 'http://localhost:8080/lessons';
+const baseURL = 'http://ec2-18-130-236-213.eu-west-2.compute.amazonaws.com:8080/lessons';
 
  const LessonService = {
   getLessons() {
