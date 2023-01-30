@@ -16,7 +16,7 @@ const spintransition = {
     return(
             <motion.div  
             animate={{y:10,x:15, scale:1.6}}
-            initial={{scale:-15}}
+            initial={{scale:-18}}
             transition={spintransition}
             >
             {<AcademyText />}
