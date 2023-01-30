@@ -3,8 +3,11 @@ import styled from 'styled-components';
 const Box = styled.div`
 color: white;
 background-color: #bcbbb9;
-margin:0px;
-padding:30px;
+display: flex;
+flex-direction:column; 
+justify-content: center;
+align-items: center;
+width: 100%;
 
 `
 

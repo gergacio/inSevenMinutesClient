@@ -19,7 +19,7 @@ padding:1rem;
 display: flex;
 flex-direction: column;
 justify-content: center;
-align-items: center;
+align-items: start;
 
 border-radius: 4px;
 font-family: "Open Sans";
@@ -62,7 +62,7 @@ height: auto;
 const BoxEditor = styled.div`
 color:#676B6E;
 background-color: #38625b;
-width: 85%;
+width: 92%;
 font-size: 1.2rem;
 font-weight: bold;
 

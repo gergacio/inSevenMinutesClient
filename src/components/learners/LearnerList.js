@@ -27,12 +27,7 @@ font-family: "Open Sans";
 const UL = styled.ul`
 width: 100%;
 `
-const Label = styled.label`
-width: 100%;
-color: black;
-font-size: 2rem;
-font-weight: bold;
-line-height: 2rem;`
+
 
 const LearnerList = ({learners, deleteLearner}) => {
     const [searchTerm, setSearchTerm] = useState('');
@@ -54,7 +49,7 @@ const LearnerList = ({learners, deleteLearner}) => {
         <Box>
           
            <UL>
-           <Input type="text" name="search" placeholder="Search my email  e.g. mt@gmail.com" onChange={event => {setSearchTerm(event.target.value)}}/>
+           <Input type="text" name="search" placeholder="Search by email  e.g. m@gmail.com" onChange={event => {setSearchTerm(event.target.value)}}/>
             {LearnersComponentList}
 
            </UL>

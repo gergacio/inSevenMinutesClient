@@ -19,7 +19,7 @@ padding:1rem;
 display: flex;
 flex-direction: column;
 justify-content: center;
-align-items: center;
+align-items: start;
 border: 1px solid black;
 
 border-radius: 4px;

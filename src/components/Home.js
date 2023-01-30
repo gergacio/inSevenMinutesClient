@@ -11,13 +11,13 @@ display:flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-height: 120vh;
+height 100vh;
 `
 
 
 const Home = () => (
   <Box>
-      <AcademySmallTextLogo />    
+       <AcademySmallTextLogo />    
         <AcademyTextLogo /> 
        
   </Box>
