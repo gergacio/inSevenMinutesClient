@@ -17,8 +17,11 @@ import LessonForm from "./components/lessons/LessonForm";
 
 //display parent as flex
 const StyledRouter = styled.div`
+width: 100%;
 display: flex;
 flex-direction: column;
+justify-content:space-between;
+
 `
 function App() {
   //render router with all routes(components)

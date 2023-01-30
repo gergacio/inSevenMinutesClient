@@ -6,19 +6,12 @@ const UL = styled.ul`
 display: flex;
 justify-content: center;
 align-items: center;
-gap: 15px;
+gap: 1rem;
 list-style:none;
-font-size: 1.1rem;
+font-size: 1.2rem;
 font-weight: bold;
 flex-direction:row; 
 
-@media (min-width: 550px) {
-  font-size: 1.2rem;
- 
-}
-@media (min-width:1200px) {
-  font-size: 1.5rem;
-}
 `
 const StyledLink = styled(Link)`
 color: #38625b;

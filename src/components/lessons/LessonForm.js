@@ -5,6 +5,7 @@ import { CKEditor } from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 import CourseService from "../../services/CourseService";
 
+
 const Box = styled.div`
 color: white;
 font-size: 1.5rem;
@@ -12,26 +13,16 @@ font-weight: bold;
 background-color: #38625b;
 width: 70%;
 height: auto;
-margin: 10rem;
+margin: 5rem;
 padding:1rem;
 
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-border: 1px solid black;
 
 border-radius: 4px;
 font-family: "Open Sans";
-@media (max-width: 550px) {
-    zoom: 0.85;
-  -moz-transform: scale(0.85);
-  -moz-transform-origin: 0 0;
-  -o-transform: scale(0.85);
-  -o-transform-origin: 0 0;
-  -webkit-transform: scale(0.85);
-  -webkit-transform-origin: 0 0;
-  }
 `
 const Label = styled.label`
 width: 100%;
@@ -60,38 +51,33 @@ font-family: "Open Sans";
 font-size: 1.5rem;
 `
 const TagText = styled.p`
+background-color: white;
 box-sizing: border-box;
 padding: 12px 20px;
 margin: 8px 0;
-border: 1px solid #38625b;
 font-size: 1.5rem;
 width: 100%;
 height: auto;
 `
 const BoxEditor = styled.div`
-font-size: 1.5rem;
+color:#676B6E;
+background-color: #38625b;
+width: 85%;
+font-size: 1.2rem;
 font-weight: bold;
-width: 70%;
+
 height: auto;
-margin: 10rem;
-padding:1rem;
+margin: 5rem;
+padding:50px;
+
 
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-
-border-radius: 4px;
+border: 1px solid blue;
+border-radius: 2px;
 font-family: "Open Sans";
-@media (max-width: 550px) {
-    zoom: 0.85;
-  -moz-transform: scale(0.85);
-  -moz-transform-origin: 0 0;
-  -o-transform: scale(0.85);
-  -o-transform-origin: 0 0;
-  -webkit-transform: scale(0.85);
-  -webkit-transform-origin: 0 0;
-  }
 `
 const BoxMain = styled.div`
 width: 100%;
@@ -101,11 +87,28 @@ color: black;
 
 display: flex;
 flex-direction: column;
-justify-content: center;
+justify-content: start;
 align-items: center;
 
-
 font-family: "Open Sans";
+@media (max-width: 550px) {
+    zoom: 0.75;
+  -moz-transform: scale(0.75);
+  -moz-transform-origin: 0 0;
+  -o-transform: scale(0.75);
+  -o-transform-origin: 0 0;
+  -webkit-transform: scale(0.75);
+  -webkit-transform-origin: 0 0; 
+  }
+  @media (max-width: 850px) {
+    zoom: 0.85;
+  -moz-transform: scale(0.85);
+  -moz-transform-origin: 0 0;
+  -o-transform: scale(0.85);
+  -o-transform-origin: 0 0;
+  -webkit-transform: scale(0.85);
+  -webkit-transform-origin: 0 0; 
+  }
 `
 const Select = styled.select`
 height: 3rem;
@@ -118,7 +121,7 @@ font-size: 1.4rem;
 `
 
 const H = styled.h2`
-color: #38625b;
+color: white;
 `
 const InputSubmit = styled.input`
 height: 3rem;
@@ -153,7 +156,8 @@ const LessonForm = ({createLessons}) => {
             
         }  
     })
-
+ 
+  
 
     // courses state---------------------------------------
     const [ courses, setCourses ] = useState([]);
@@ -205,10 +209,12 @@ const LessonForm = ({createLessons}) => {
 
     return (
         <BoxMain>
-              <BoxEditor className="editor">
-                <H>content creation tool</H>
-                    <div>
+             <BoxEditor>
+                <H>Content Creation Tool</H>
+                
                         <CKEditor
+                        
+                        // config={{ plugins: [ImageResize] }} 
                         editor={ClassicEditor}
                         data={text}
                         onChange={(event, editor) => {
@@ -216,17 +222,17 @@ const LessonForm = ({createLessons}) => {
                             setText(data)
                         }}
                         />
-                    </div>
-                       <H>tagged content for Create Lesson Form</H>
+                  
+                    <H>Tagged Content</H>
                     <div>
                         
-                        <TagText>{text}</TagText>
+                     <TagText>{text}</TagText>
 
                     </div>
-                </BoxEditor>
-            <form onSubmit={onSubmit}>
+              </BoxEditor>
+             <form onSubmit={onSubmit}>
 
-                        <Box>
+                    <Box>
                         <h2>Create Lesson</h2>
                         <div>
                             <Label htmlFor="title">Title</Label>
@@ -285,14 +291,14 @@ const LessonForm = ({createLessons}) => {
                         
                         </div> 
                         <div>
-                            <Label htmlFor="content">Content</Label>
+                            <Label htmlFor="content">Tagged Content</Label>
 
                             <TextArea 
                                 required
                                 onChange={onChange} 
                                 type="text" 
                                 name="content"
-                                placeholder="tagged content e.g. <h2><strong>Memory</strong></h2>"
+                                placeholder="e.g. <h2>Memory</h2>"
                                 value={formData.content} />
                             
                         </div> 
@@ -300,7 +306,7 @@ const LessonForm = ({createLessons}) => {
                         <p></p>
                         <InputSubmit type="submit" value="Save" id="save" />
 
-                        </Box>
+                      </Box>
 
             </form>
 

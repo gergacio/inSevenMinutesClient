@@ -14,15 +14,6 @@ align-items: center;
 padding: 20px;
 margin:120px;
 font-family: "Open Sans";
-@media (max-width: 550px) {
-    zoom: 0.85;
-  -moz-transform: scale(0.85);
-  -moz-transform-origin: 0 0;
-  -o-transform: scale(0.85);
-  -o-transform-origin: 0 0;
-  -webkit-transform: scale(0.85);
-  -webkit-transform-origin: 0 0;
-  }
 `
 
 

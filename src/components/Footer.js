@@ -3,9 +3,9 @@ import styled from 'styled-components';
 const Box = styled.div`
 color: white;
 background-color: #bcbbb9;
-display: flex;
-justify-content: center;
-margin-top: auto;
+margin:0px;
+padding:30px;
+
 `
 
 const Footer = () => (

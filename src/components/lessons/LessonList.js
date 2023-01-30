@@ -4,29 +4,14 @@ import styled from 'styled-components';
 
 const Box = styled.div`
 width: 100%;
-
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 
-padding: 20px;
 margin:120px;
 font-family: "Open Sans";
-
-@media (max-width: 550px) {
-    zoom: 0.85;
-  -moz-transform: scale(0.85);
-  -moz-transform-origin: 0 0;
-  -o-transform: scale(0.85);
-  -o-transform-origin: 0 0;
-  -webkit-transform: scale(0.85);
-  -webkit-transform-origin: 0 0; 
-  }
-
-
 `
-
 
 const Input = styled.input`
 box-sizing: border-box;
@@ -65,11 +50,10 @@ const LessonList = ({lessons, deleteLesson}) => {
         )
     });
     return(
-        <Box>
-               
-               <UL>
-               <Input type="text" name="search" placeholder="Search by title  e.g. Algorithm Complexity" onChange={event => {setSearchTerm(event.target.value)}}/>
-                {LessonComponentList}</UL>
+        <Box>   
+              <Input type="text" name="search" placeholder="Search by title  e.g. Memory" onChange={event => {setSearchTerm(event.target.value)}}/>
+
+               <UL>{LessonComponentList}</UL>
         </Box>
     );
 

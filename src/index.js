@@ -3,11 +3,40 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import styled from "styled-components";
+
+const Box = styled.div`
+width: 100%;
+display: flex;
+flex-direction: column;
+@media (max-width: 550px) {
+  zoom: 0.75;
+-moz-transform: scale(0.75);
+-moz-transform-origin: 0 0;
+-o-transform: scale(0.75);
+-o-transform-origin: 0 0;
+-webkit-transform: scale(0.75);
+-webkit-transform-origin: 0 0; 
+}
+@media (max-width: 850px) {
+  zoom: 0.85;
+-moz-transform: scale(0.85);
+-moz-transform-origin: 0 0;
+-o-transform: scale(0.85);
+-o-transform-origin: 0 0;
+-webkit-transform: scale(0.85);
+-webkit-transform-origin: 0 0; 
+}
+`
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Box>
+       <App />
+       
+    </Box>
+ 
   </React.StrictMode>
 );
 

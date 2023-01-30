@@ -21,15 +21,6 @@ font-family: "Open Sans";
 border-radius: 6px;
 font-size: 1.5rem;
 font-weight: bold;
-@media (max-width: 550px) {
-  zoom: 0.85;
--moz-transform: scale(0.85);
--moz-transform-origin: 0 0;
--o-transform: scale(0.85);
--o-transform-origin: 0 0;
--webkit-transform: scale(0.85);
--webkit-transform-origin: 0 0;
-}
 `
 const Heading = styled.h5`
 font-size: 1.8rem;

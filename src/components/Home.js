@@ -5,28 +5,21 @@ import AcademySmallTextLogo from "./AcademySmallTextLogo";
 
 
 const Box = styled.div`
-margin-top:100px;
-min-height: 100vh;
-width: 100vw;
+
 background-color: #bcbbb9;
-display: flex;
+display:flex;
+flex-direction: column;
 justify-content: center;
 align-items: center;
-@media (min-width: 550px) {
-  flex-direction:row; 
-}
-@media (min-width: 850px) {
-
-  flex-direction:column; 
-}
+height: 120vh;
 `
 
 
 const Home = () => (
   <Box>
-     
-       <AcademySmallTextLogo /> 
-       <AcademyTextLogo /> 
+      <AcademySmallTextLogo />    
+        <AcademyTextLogo /> 
+       
   </Box>
 );
 

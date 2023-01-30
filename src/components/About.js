@@ -32,7 +32,7 @@ const About = () => (
    
       <Div>
             <h2>InSevenMinutes turning information into knowledge.</h2>
-            <h4>We simplify complexity.</h4>
+           
            
       </Div>
   
