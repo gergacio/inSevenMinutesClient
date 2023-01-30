@@ -8,7 +8,7 @@ justify-content: center;
 align-items: center;
 gap: 0.5rem;
 list-style:none;
-font-size: 1.2rem;
+font-size: 1.1rem;
 font-weight: bold;
 flex-direction:row; 
 
